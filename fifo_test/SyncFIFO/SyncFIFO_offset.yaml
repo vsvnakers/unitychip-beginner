@@ -1,0 +1,103 @@
+variables:
+  - name: SyncFIFO_top.rst_n
+    type: CData
+    mem_bytes: 1
+    rtl_width: 1
+    offset: 9
+  - name: SyncFIFO_top.we_i
+    type: CData
+    mem_bytes: 1
+    rtl_width: 1
+    offset: 10
+  - name: SyncFIFO_top.re_i
+    type: CData
+    mem_bytes: 1
+    rtl_width: 1
+    offset: 11
+  - name: SyncFIFO_top.full_o
+    type: CData
+    mem_bytes: 1
+    rtl_width: 1
+    offset: 12
+  - name: SyncFIFO_top.empty_o
+    type: CData
+    mem_bytes: 1
+    rtl_width: 1
+    offset: 13
+  - name: SyncFIFO_top.SyncFIFO.wptr
+    type: CData
+    mem_bytes: 1
+    rtl_width: 4
+    offset: 14
+  - name: SyncFIFO_top.SyncFIFO.rptr
+    type: CData
+    mem_bytes: 1
+    rtl_width: 4
+    offset: 15
+  - name: SyncFIFO_top.SyncFIFO.counter
+    type: CData
+    mem_bytes: 1
+    rtl_width: 5
+    offset: 16
+  - name: SyncFIFO_top.SyncFIFO.rvalid
+    type: CData
+    mem_bytes: 1
+    rtl_width: 1
+    offset: 17
+  - name: SyncFIFO_top.SyncFIFO.wvalid
+    type: CData
+    mem_bytes: 1
+    rtl_width: 1
+    offset: 18
+  - name: __Vdpi_export_trigger
+    type: CData
+    mem_bytes: 1
+    rtl_width: 1
+    offset: 19
+  - name: __Vtrigrprev__TOP__SyncFIFO_top.clk
+    type: CData
+    mem_bytes: 1
+    rtl_width: 1
+    offset: 20
+  - name: __VactContinue
+    type: CData
+    mem_bytes: 1
+    rtl_width: 1
+    offset: 21
+  - name: SyncFIFO_top.data_i
+    type: IData
+    mem_bytes: 4
+    rtl_width: 32
+    offset: 24
+  - name: SyncFIFO_top.data_o
+    type: IData
+    mem_bytes: 4
+    rtl_width: 32
+    offset: 28
+  - name: __VstlIterCount
+    type: IData
+    mem_bytes: 4
+    rtl_width: 32
+    offset: 32
+  - name: __VicoIterCount
+    type: IData
+    mem_bytes: 4
+    rtl_width: 32
+    offset: 36
+  - name: __VactIterCount
+    type: IData
+    mem_bytes: 4
+    rtl_width: 32
+    offset: 40
+  - name: SyncFIFO_top.SyncFIFO.ram
+    type: IData
+    mem_bytes: 4
+    rtl_width: 32
+    array_size: 16
+    offset: 44
+  - name: __Vm_traceActivity
+    type: CData
+    mem_bytes: 1
+    rtl_width: 1
+    array_size: 2
+    offset: 108

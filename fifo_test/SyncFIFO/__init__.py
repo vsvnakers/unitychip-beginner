@@ -42,14 +42,14 @@ class DUTSyncFIFO(object):
 
 
         # BindDPI or Native pin address
-        self.clk.BindDPIPtr(self.dut.GetDPIHandle("clk", 0), self.dut.GetDPIHandle("clk", 1))
-        self.rst_n.BindDPIPtr(self.dut.GetDPIHandle("rst_n", 0), self.dut.GetDPIHandle("rst_n", 1))
-        self.we_i.BindDPIPtr(self.dut.GetDPIHandle("we_i", 0), self.dut.GetDPIHandle("we_i", 1))
-        self.re_i.BindDPIPtr(self.dut.GetDPIHandle("re_i", 0), self.dut.GetDPIHandle("re_i", 1))
-        self.data_i.BindDPIPtr(self.dut.GetDPIHandle("data_i", 0), self.dut.GetDPIHandle("data_i", 1))
-        self.data_o.BindDPIPtr(self.dut.GetDPIHandle("data_o", 0), self.dut.GetDPIHandle("data_o", 1))
-        self.full_o.BindDPIPtr(self.dut.GetDPIHandle("full_o", 0), self.dut.GetDPIHandle("full_o", 1))
-        self.empty_o.BindDPIPtr(self.dut.GetDPIHandle("empty_o", 0), self.dut.GetDPIHandle("empty_o", 1))
+        self.clk.BindNativeData(self.dut.NativeSignalAddr("clk"))
+        self.rst_n.BindNativeData(self.dut.NativeSignalAddr("rst_n"))
+        self.we_i.BindNativeData(self.dut.NativeSignalAddr("we_i"))
+        self.re_i.BindNativeData(self.dut.NativeSignalAddr("re_i"))
+        self.data_i.BindNativeData(self.dut.NativeSignalAddr("data_i"))
+        self.data_o.BindNativeData(self.dut.NativeSignalAddr("data_o"))
+        self.full_o.BindNativeData(self.dut.NativeSignalAddr("full_o"))
+        self.empty_o.BindNativeData(self.dut.NativeSignalAddr("empty_o"))
 
 
         # Add2Port

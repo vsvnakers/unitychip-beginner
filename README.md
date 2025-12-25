@@ -22,7 +22,7 @@
 第一步：生成 DUT
 在 fifo_test 目录下执行一次即可：
 
-picker export rtl/SyncFIFO.v --sname SyncFIFO --lang python --sim verilator -w SyncFIFO.fst
+picker export rtl/SyncFIFO.v --sname SyncFIFO --lang python --sim verilator -w SyncFIFO.fst --rw 1
 
 这一步会自动生成 SyncFIFO 目录，用于 Python 驱动仿真。
 

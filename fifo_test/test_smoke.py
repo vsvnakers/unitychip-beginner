@@ -148,5 +148,5 @@ def test_smoke_dut():
 if __name__ == "__main__":
     test_reset_dut_default()
     test_reset_dut_imme()
-    # test_reset_dut_assert()
+    test_reset_dut_assert()
     test_smoke_dut()
